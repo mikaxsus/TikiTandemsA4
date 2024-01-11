@@ -99,6 +99,8 @@ bCookOnTheFlyForLaunchOn=True
 [OnlineSubsystemEIK]
 bEnabled=true
 
+[OnlineSubsystem]
+DefaultPlatformService=EIK
 
 ;EIK Comment: You do not need to worry about this setting as we dynamically set it in Travel URL depending upon if we are using Listen Server or Dedicated Server
 
@@ -109,15 +111,6 @@ bIsUsingP2PSockets=true
 !NetDriverDefinitions=ClearArray
 +NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="OnlineSubsystemEIK.NetDriverEIK",DriverClassNameFallback="OnlineSubsystemUtils.IpNetDriver")
 
-[OnlineSubsystem]
-DefaultPlatformService=EIK
-NativePlatformService=Steam
-
-[OnlineSubsystemSteam]
-bEnabled=true
-bUseSteamNetworking=false
-bInitServerOnClient=true
-SteamDevAppId=480
 
 [/Script/OnlineSubsystemEIK.EIKSettings]
 bAutomaticallySetupEIK=True
