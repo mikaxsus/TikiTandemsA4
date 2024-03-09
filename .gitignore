@@ -74,3 +74,6 @@ DerivedDataCache/*
 
 # Plugins folder since it needs libraries to function properly
 Plugins/*
+/.idea
+.vsconfig
+TikiTandems.sln.DotSettings.user
